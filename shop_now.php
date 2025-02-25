@@ -24,6 +24,8 @@ include 'header.php';
                         <h5 class="card-title">Stylish Jacket</h5>
                         <p class="card-text text-muted">$49.99</p>
                         <a href="checkout.php?product_id=15" class="btn btn-danger">Buy Now</a>
+                        <a href="add_to_cart.php?product_id=15" class="btn btn-outline-primary">Add Cart</a>
+
                     </div>
                 </div>
             </div>
@@ -35,6 +37,8 @@ include 'header.php';
                         <h5 class="card-title">Casual T-Shirt</h5>
                         <p class="card-text text-muted">$19.99</p>
                         <a href="checkout.php?product_id=14" class="btn btn-danger">Buy Now</a>
+                        <a href="add_to_cart.php?product_id=14" class="btn btn-outline-primary">Add Cart</a>
+
                     </div>
                 </div>
             </div>
@@ -46,6 +50,8 @@ include 'header.php';
                         <h5 class="card-title">Elegant Dress</h5>
                         <p class="card-text text-muted">$59.99</p>
                         <a href="checkout.php?product_id=13" class="btn btn-danger">Buy Now</a>
+                        <a href="add_to_cart.php?product_id=13" class="btn btn-outline-primary">Add Cart</a>
+
                     </div>
                 </div>
             </div>
@@ -67,6 +73,8 @@ include 'header.php';
                         <h5 class="card-title">The Success Mindset</h5>
                         <p class="card-text text-muted">$14.99</p>
                         <a href="checkout.php?product_id=17" class="btn btn-danger">Buy Now</a>
+                        <a href="add_to_cart.php?product_id=17" class="btn btn-outline-primary">Add Cart</a>
+
                     </div>
                 </div>
             </div>
@@ -78,6 +86,8 @@ include 'header.php';
                         <h5 class="card-title">E-commerce Mastery</h5>
                         <p class="card-text text-muted">$29.99</p>
                         <a href="checkout.php?product_id=18" class="btn btn-danger">Buy Now</a>
+                        <a href="add_to_cart.php?product_id=18" class="btn btn-outline-primary">Add Cart</a>
+
                     </div>
                 </div>
             </div>

@@ -36,7 +36,7 @@ $authenticated = isset($_SESSION["email"]);
           <a class="nav-link active" aria-current="page" href="shop_now.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="cart.php">View Orders</a>
+          <a class="nav-link active" aria-current="page" href="cart.php">View Cart</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="About_us.php">About Us</a>

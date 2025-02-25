@@ -23,7 +23,7 @@ if (isset($_GET['product_id']) && is_numeric($_GET['product_id'])) {
     exit();
 }
 
-// Redirect back to cart
+// Redirect back to the cart page
 header("Location: cart.php");
 exit();
 ?>

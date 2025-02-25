@@ -2,12 +2,14 @@
 session_start();
 include 'header.php'; 
 
+
 // Protect page: only allow admins
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header("Location: login.php");
     exit;
 }
 ?>
+
 <!-- Main Container -->
 <div class="container-fluid">
   <!-- Top Navbar -->
@@ -50,6 +52,21 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
             <i class="bi bi-receipt me-2"></i>View Orders
           </a>
         </li>
+        <li class="nav-item mb-2">
+          <a href="report.php" class="nav-link text-dark">
+            <i class="bi bi-receipt me-2"></i>Sales Analytics Report
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="customer_feedback.php" class="nav-link text-dark">
+            <i class="bi bi-receipt me-2"></i>Customer Feedback Report
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="invoice_report.php" class="nav-link text-dark">
+            <i class="bi bi-receipt me-2"></i>Invoice Report
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -60,7 +77,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
         <p class="lead">Welcome, <?= htmlspecialchars($_SESSION['first_name']) ?>. You are logged in as an Admin.</p>
       </div>
 
-      <!-- Dashboard Cards -->
+      <!-- First Row of Cards -->
       <div class="row">
         <!-- Card: Manage Products -->
         <div class="col-md-4 mb-4">
@@ -117,6 +134,66 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
         </div>
       </div>
 
+      <!-- Second Row of Cards -->
+      <div class="row">
+        <!-- Card: Customer Feedback -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-chat-dots display-4 text-info me-3"></i>
+                <div>
+                  <h5 class="card-title">Customer Feedback</h5>
+                  <p class="card-text">View and manage customer feedback.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="customer_feedback.php" class="btn btn-info">Go</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Invoice Report -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-receipt display-4 text-secondary me-3"></i>
+                <div>
+                  <h5 class="card-title">Invoice Report</h5>
+                  <p class="card-text">Check and manage invoice details.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="invoice_report.php" class="btn btn-secondary">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Row of Cards -->
+      <div class="row">
+        <!-- Card: Sales Analytics -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-receipt display-4 text-warning me-3"></i>
+                <div>
+                  <h5 class="card-title">Sales Analytics Report</h5>
+                  <p class="card-text">Check Sales Analytics Report details.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="report.php" class="btn btn-warning">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Additional Widgets (Optional) -->
       <div class="row">
         <div class="col-md-6 mb-4">
@@ -139,6 +216,8 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     </div>
   </div>
 </div>
+
+
 
 <!-- Include Bootstrap Icons if not already in header -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">

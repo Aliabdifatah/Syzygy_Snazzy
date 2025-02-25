@@ -96,6 +96,7 @@ if (!empty($_SESSION['cart'])) {
 </div>
 </body>
 </html>
-<?php $conn->close(); ?>
-<?php include 'footer.php'; ?>
-
+<?php 
+$conn->close();
+include 'footer.php';
+?>

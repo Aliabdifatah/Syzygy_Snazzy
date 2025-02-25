@@ -1,4 +1,10 @@
 <?php
+include "header.php";
+
+
+
+?>
+<?php
 session_start();
 include 'header.php'; 
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'client') {
